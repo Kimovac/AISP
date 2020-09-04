@@ -1,6 +1,13 @@
-#include<iostream>
-#include<vector>
-#include<string>
+//Program that finds the longest comong substring between two strigns
+//It does so by using dynamic programing.
+
+//Time compexity of the algorithm is O(n*m), and
+//space complexity is O(1). Where n and m are the
+//lenghts of the strings.
+
+#include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 

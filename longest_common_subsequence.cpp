@@ -1,3 +1,10 @@
+//Program that finds the longest comong subsequence between two strigns
+//It does so by using dynamic programing.
+
+//Time compexity of the algorithm is O(n*m), and
+//space complexity is O(n*m). Where n and m are the
+//lenghts of the strings.
+
 #include<iostream>
 #include<algorithm>
 #include<vector>

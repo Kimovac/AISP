@@ -1,3 +1,6 @@
+//Program that takes the postfix notation of representing 
+//arithmetic expressions. And prints out the result
+
 #include <iostream>
 #include <string>
 #include <stack>
@@ -11,6 +14,7 @@ bool is_operator(char c) {
 	return c == 'M' || c == 'm';
 }
 
+//Function that returns the priority of operators.
 int priority(char c) {
 	if(c == 'm')
 		return 1;
@@ -20,6 +24,9 @@ int priority(char c) {
 		throw "Invalid operator";
 }
 
+//Function that applays the operators from the operators stack
+//on to the values from the values stack and stores them back
+//in the values stack.
 void use_operator(stack<char> &operators, stack<int> &values) {
 	char op = operators.top();
 	operators.pop();
@@ -49,11 +56,8 @@ int exp_value(const string &exp) {
 			while (operators.top() != '(') {
 				use_operator(operators, values);
 			}
-			//Ovo pop sam bio zaboravio!!!
-			//Katastrofalna greska,
-			//jer ostaje '(' na steku operators
-			//I ako se pozove funk. use_operator...
-			//SEGMENTATION FAULT!!!!!!!!!
+			//Its important to remove the "(" from
+			//the operators stack.
 			operators.pop();
 		}
 		else if (is_operator(c)) {

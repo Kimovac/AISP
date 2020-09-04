@@ -1,4 +1,7 @@
-//Program
+//Program that finds the largest square in the matrix made up of 1s
+//It does so by using dynamic programming.
+
+//Algorithm time complexity is O(n^2), and space complexity is O(n);
 
 #include <iostream>
 #include <algorithm>

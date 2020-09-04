@@ -1,15 +1,27 @@
-#include<iostream>
-#include<algorithm>
-#include<functional>
-#include<utility>
-#include<vector>
-#include<queue>
+//Program that inputs number k, followed by k sorted arrays.
+//And outputs a sorted array which is a merger of all the 
+//arrays. It does so by keeping a heap of k smallest elements.
+//If an element is removed from the heap. A new element is
+//inserted into it, that is from the same array that the
+//removed element belonged to, if it exists. And so on until
+//the heap is empty. Removed elements from the heap are stored
+//in the final array which is the solution.
+
+//Alogrithm is of time complexity O(k*n*logk), and space
+//complexity O(k). Where n represents the average length
+//of the sorted arrays.
+
+#include <iostream>
+#include <algorithm>
+#include <functional>
+#include <utility>
+#include <vector>
+#include <queue>
 
 using namespace std;
 
 typedef pair<int, int> int_p;
 
-//function that sorts k sorted arrays into a single sorted array of lenght n
 void sort_arrays(vector<int> &arr, vector<vector<int>> arrays) {
 	int k = arrays.size();
 

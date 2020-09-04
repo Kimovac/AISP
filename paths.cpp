@@ -1,10 +1,22 @@
+//Program that inputs number n, followed by an n x x matrix.
+//And outputs the number of paths from position the (0, 0)
+//to position (n-1, n-1) by only moving down or right. 
+//Alogrithm works by using dynamic programing. It does so
+//by starting from the position (n-1, n-1) and calculating
+//for each position the distance to the end by adding 
+//distances to the end for the element beneath and to the
+//right of current one until they reach the position (0, 0)
+
+//Algorithm time complexity O(n^2). And space complexity
+//is 0(n^2), which can be lowered to O(n) by saving the
+//curent row and the one above it.
+
+
 #include<iostream>
 #include<vector>
 
 using namespace std;
 
-//function that finds number of paths from [0][0] to [n-1][m-1]
-//with blockades while only moving left and right
 int number_of_paths(vector<vector<int>> matrix) {
 	int n = matrix.size();
 	int m = matrix[0].size();

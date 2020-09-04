@@ -1,7 +1,17 @@
-#include<iostream>
-#include<algorithm>
-#include<vector>
-#include<utility>
+//Program inputs number n followed by n pairs. Each
+//pair represents temperature and humidity for a
+//singe day. It prints out number of subjectivly 
+//warm days. A day is subjectivly war if there are
+//no ather days with greater of equal temperatue
+//and humidity. This program is an alteration of
+//the algorithm for findigs a maxima of a point set.
+
+//Algorithm is of time complexity O(nlogn)
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <utility>
 
 using namespace std;
 
