@@ -12,4 +12,4 @@ Algortihms from course AISP:
 * programt that finds the postfix value of an expression [(postfiks.cpp)](./postfiks.cpp)
 * program that finds optimal placement for a router [(ruter.cpp)](./ruter.cpp)
 * program that sorts k-sorted arrays [(sorted_arrays.cpp)](./sorted_arrays.cpp)
-* program that finds a subjectivly warm days [(subjectivly_warm_day.cpp)](./subjectivly_warm_days.cpp)
+* program that finds a subjectively warm days [(subjectively_warm_day.cpp)](./subjectively_warm_days.cpp)
